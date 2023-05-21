@@ -28,6 +28,6 @@ const arr = [-6, 20, 8, -2, 4]
 insertionSort(arr)
 console.log(arr) // -6, -2, 4, 8, 20
 
-// Big-O = 
+// Big-O = O(nˆ2)
 
 // Notes
