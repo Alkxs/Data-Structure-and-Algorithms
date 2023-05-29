@@ -1,0 +1,54 @@
+Concepts and notes:
+
+BIG O Notation
+Recursion
+Performance of array & objects operation
+Problem solving (PREP)
+
+patterns:
+- frequency counter
+- multiple pointers
+- sliding window
+- Divide and conquer
+
+Algos:
+
+Search:
+- Linear search
+- Binary search
+
+Sort:
+-bubble
+-selection
+-insertion
+-merge
+-quick
+-radix sort
+
+Data Structures:
+-linked lists
+-Doubly linked list
+-Stacks
+-Queues
+-Binary Search Trees
+- Tree Traversal
+- Binary trees
+- Hash tables
+- Graphs
+- Graph traversal
+
+Actual altos examples to solve:
+- anagram string
+- sum 0
+- count unique values
+- Factorial
+- Fibonacci
+- Power
+- Product of array
+- Recursive range
+- Reverse string
+
+CS concepts:
+- comparison / non-comparison strategies
+- iterative / recursive implementation
+- Divide & Conquer paradigm 
