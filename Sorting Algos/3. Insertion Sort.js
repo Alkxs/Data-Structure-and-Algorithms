@@ -31,3 +31,4 @@ console.log(arr) // -6, -2, 4, 8, 20
 // Big-O = O(nˆ2)
 
 // Notes
+//Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position
