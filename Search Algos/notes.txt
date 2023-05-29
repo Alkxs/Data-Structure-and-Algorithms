@@ -1,0 +1,4 @@
+NOTES:
+
+1. Javascript sort method - O(n log n)
+2. Bubble sort

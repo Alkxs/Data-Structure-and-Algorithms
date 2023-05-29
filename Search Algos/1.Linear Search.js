@@ -24,3 +24,6 @@ console.log(linearSearch([-5, 2, 10, 4, 6], 6)) //4
 console.log(linearSearch([-5, 2, 10, 4, 6], 20)) //-1
 
 // Big-O = O(n)
+
+//Notes
+//*** built-in array methods are indexOf and find

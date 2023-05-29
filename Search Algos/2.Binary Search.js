@@ -40,3 +40,5 @@ console.log(binarySearch([-5, 2, 4, 6, 10], 20)) //-1
 
 //Notes:
 // binary search only works on sorted Array; if the array is not sorted, either you use linear search or sort the array first
+
+// Follows the divide and conquer approach

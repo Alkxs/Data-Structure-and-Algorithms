@@ -7,30 +7,63 @@
 //3 const arr = [-6, 20, 8, -2, 4]
 
 //pseudocode:
-//Compare adjacent elements in the array and swap the positions if they are not in the intended order
-//Repeat the instruction as you step through each element in the array
-//Once you step through the whole array with no swaps, the array is sorted.
+//Start looping from with a variable called i the end of the array towards the beginning
+//Start an inner loop with a variable called j from the beginning until i - 1
+//if arr[j] is greater than arr[j+1], swap those two values
+//return the sorted array
 
-function bubbleSort(arr) {
-  let swapped
-  do {
-    swapped = false
-  for(let i = 0; i < arr.length - 1; i++){
-    if(arr[i] > arr[i+1]) {
-      let temp = arr[i]
-      arr[i] = arr[i+1]
-      arr[i+1] = temp
-      swapped = true
+1. function bubbleSort(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr.length - i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+                // Swap arr[j] and arr[j + 1]
+                let temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
     }
-  }
- } while(swapped)
+    return arr;
 }
+
+2. function bubbleSort(arr){
+  let noSwaps
+  
+  const swap = (arr, idx1, idx2) => {
+  [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]
+}
+
+for (let i = arr.length; i > 0; i--) {
+  noSwaps=true
+        for (let j = 0; j < i - 1; j++) {
+            if (arr[j] > arr[j + 1]) {
+              swap(arr, j, j + 1)
+              noSwaps=false
+            }
+        }
+        if(noSwaps) break
+    }
+    return arr
+}
+ 
 
 const arr = [8, 20, -2, 4, -6]
 bubbleSort(arr)
 console.log(arr) //[-6, -2, 4, 8, 20] 
 
-// Big-O = O(nˆ2)
+// Big-O = O(nˆ2)g
 
 // Notes
 // poor sorting algo, usually used to introduction to sort algos
+
+*** Swapping in JS
+
+1. function swap(arr, idx1, idx2) {
+  let temp = arr[idx1]
+  arr[idx1] = arr[idx2]
+  arr[idx2] = temp
+}
+
+2. const swap = (arr, idx1, idx2) => {
+  [arr[idx1], arr[idx2]] = [arr[idx2], arr[idx1]]
+}
