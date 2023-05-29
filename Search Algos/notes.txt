@@ -3,3 +3,13 @@ NOTES:
 1. Javascript sort method - O(n log n)
 2. Bubble sort
 3. Selection sort
+4. Insertion sort
+
+
+
+
+
+
+
+
+*** in the big schema the first 4 are more or less the same in terms of performance

@@ -32,3 +32,7 @@ console.log(arr) // -6, -2, 4, 8, 20
 
 // Notes
 //Similar to bubble sort, but instead of first placing large values into sorted position, it places small values into sorted position
+
+// it works well when you have data coming in, it only checks for that data and it inserts the value where needed
+
+//
