@@ -5,6 +5,8 @@ NOTES:
 3. Selection sort
 4. Insertion sort
 
+5. Merge sort
+
 
 
 

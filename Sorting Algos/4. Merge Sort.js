@@ -30,9 +30,9 @@ function merge(leftArr, rightArr){
     }
   }
   return [...sortedArr, ...leftArr, ...rightArr]
-}
+}  
 
 const arr = [-6, 20, 8, -2, 4]
 console.log(mergeSort(arr))
 
-// Big-O = O(nlogn)
+// Big-O = O(n log n)
