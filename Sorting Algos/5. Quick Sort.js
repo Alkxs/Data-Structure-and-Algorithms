@@ -38,3 +38,8 @@ console.log(quickSort(arr)) // [-6, -2, 4, 8,20]
 // Big-O = O(nlogn)
 
 // Notes
+
+// like merge sort, exploits the fact that arrays of 0 or 1 are always sorted.
+// Works by selecting one element(called the pivot) and finding the index where the pivot should end up in the sorted array
+
+// Compared to merge sort it does not require extra storage has it is an in-place algo, for this it is preferred with large arrays arrays where memory it's a concern. Also better for numeric arrays

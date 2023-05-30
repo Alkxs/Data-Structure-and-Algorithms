@@ -6,7 +6,8 @@ NOTES:
 4. Insertion sort
 
 5. Merge sort
-
+6. Quick sort
+7. Radix sort
 
 
 
