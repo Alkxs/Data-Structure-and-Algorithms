@@ -37,7 +37,7 @@ Data Structures:
 - Graphs
 - Graph traversal
 
-Actual altos examples to solve:
+Actual algos examples to solve:
 - anagram string
 - sum 0
 - count unique values
