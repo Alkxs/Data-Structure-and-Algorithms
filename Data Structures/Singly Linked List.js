@@ -86,6 +86,18 @@ class LinkedList {
     }
       return oldHead
     }
+    unshift(val){
+        const newNode = new Node(val)
+        if(!this.head){
+        this.head = newNode
+        this.tail = this.head
+        } else {
+          newNode.next = this.head
+          this.head = newNode
+        }
+        this.length++
+        return this 
+    }
 }
 
 let list = new LinkedList()
@@ -98,6 +110,8 @@ console.log(list)
 
 let poppedValue = list.pop()
 let shiftedValue = list.shift()
+
+list.unshift('soCool')
 
 console.log(poppedValue)
 console.log(shiftedValue)
