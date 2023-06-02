@@ -4,8 +4,8 @@
 - Consists of nodes and each node has a value and a pointer to another node or null
 - A bunch of nodes pointing to the next one
 - Mainly supports 
-  * insertion 
-  * deletion
+  * insertion (push, unshift)
+  * deletion (pop, shift)
   * Search
 
 Comparisons with arrays
@@ -76,6 +76,16 @@ class LinkedList {
       }
       return current
     }
+    shift(){
+      if(!this.head) return undefined
+      let oldHead = this.head
+      this.head = oldHead.next
+      this.length--
+      if (this.length === 0) {
+      this.tail = null;
+    }
+      return oldHead
+    }
 }
 
 let list = new LinkedList()
@@ -87,6 +97,8 @@ list.push('!')
 console.log(list)
 
 let poppedValue = list.pop()
+let shiftedValue = list.shift()
 
 console.log(poppedValue)
+console.log(shiftedValue)
 console.log(list)
