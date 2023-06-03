@@ -2,12 +2,12 @@ Data Structures
 = collection of values
 
 - Singly Linked lists
+- Doubly Linked lists
 - Binary Search Trees
 - Queues
 - Undirected Unweighted Graphs
 - Binary Heaps
 - Directed Graphs
 - Hash Tables
-- Doubly Linked lists
 - Stacks 
 

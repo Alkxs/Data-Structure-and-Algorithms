@@ -6,8 +6,8 @@
 - Mainly supports 
   * insertion (push, unshift, insert at position)
   * deletion (pop, shift, remove at position)
-  * Search (get, set)
-  * Access ()
+  * Search 
+  * Access 
 
 Comparisons with arrays
 

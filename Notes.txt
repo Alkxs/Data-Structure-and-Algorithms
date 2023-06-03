@@ -52,3 +52,5 @@ CS concepts:
 - comparison / non-comparison strategies
 - iterative / recursive implementation
 - Divide & Conquer paradigm 
+- Caching
+- Memoization
