@@ -26,7 +26,7 @@ Sort:
 -radix sort
 
 Data Structures:
--linked lists
+-linked lists (push,pop,shift,unshift,get,set)
 -Doubly linked list
 -Stacks
 -Queues

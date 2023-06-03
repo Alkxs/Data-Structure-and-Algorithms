@@ -6,7 +6,7 @@
 - Mainly supports 
   * insertion (push, unshift)
   * deletion (pop, shift)
-  * Search
+  * Search (get, set)
 
 Comparisons with arrays
 
@@ -106,7 +106,16 @@ class LinkedList {
         current = current.next;
       }
         return current
-  }
+    }
+    set(index, val){
+        let node = this.get(index)
+        if (node) {
+        node.val = val
+        return true
+        }
+        return false
+    }
+
 }
 
 let list = new LinkedList()
@@ -125,4 +134,5 @@ list.unshift('soCool')
 console.log(poppedValue)
 console.log(shiftedValue)
 console.log(list.get(4))
+console.log(list.set(3, 'boh'))
 console.log(list)
