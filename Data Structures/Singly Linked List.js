@@ -7,6 +7,7 @@
   * insertion (push, unshift, insert at position)
   * deletion (pop, shift, remove at position)
   * Search (get, set)
+  * Access ()
 
 Comparisons with arrays
 
@@ -20,9 +21,14 @@ Arrays:
 - insertion and deletion can be expensive
 - can quickly be accessed at a specific index
 
+* Linked list are better for insertion and deletion at the beginning(arrays have to re-index the whole thing)
+* Arrays are better for inserting and deleting at the end though(as in linked list you would need to traverse the whole thing)
+* Arrays contain a built-in index
+* linked list are foundation for other ds like queues and stacks
+
 // Main use and advantages
 
-You use a linked list if need easy insertion and deletion at the beginning or end of the list
+You use a linked list if need easy insertion and deletion at the beginning of the list
 
 // Examples 
 
@@ -155,6 +161,7 @@ class LinkedList {
     }
 
     return this;
+    }
 }
 
 let list = new LinkedList()
@@ -176,3 +183,9 @@ console.log(list.get(4))
 console.log(list.set(3, 'boh'))
 console.log(list.remove(1))
 console.log(list)
+
+// Big O
+* Insertion = O(1)
+* Removal = O(1) or O(n)
+* Searching = O(n)
+* Access = O(n)
