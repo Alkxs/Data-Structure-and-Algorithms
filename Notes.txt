@@ -18,12 +18,16 @@ Search:
 - Binary search
 
 Sort:
+
+* Naive
 -bubble
 -selection
 -insertion
+
+* Divide and conquer
 -merge
 -quick
--radix sort
+
 
 Data Structures:
 -linked lists (push,pop,shift,unshift,get,set)
@@ -51,6 +55,9 @@ Actual algos examples to solve:
 CS concepts:
 - comparison / non-comparison strategies
 - iterative / recursive implementation
-- Divide & Conquer paradigm 
+- Divide & Conquer paradigm/ technique (ex. binary search)
 - Caching
 - Memoization
+- greedy algorithms
+- Brute force approach
+- Dynamic programming (solution you can cache)
