@@ -38,19 +38,37 @@ class DoublyLinkedList {
     // delete at the end of the list
     pop(){
         if (!this.head) {
-        return undefined;
+        return undefined
         }
   
-        const poppedNode = this.tail;
+        const poppedNode = this.tail
         if (this.length === 1) {
-          this.head = null;
-          this.tail = null;
+          this.head = null
+          this.tail = null
         } else {
-          this.tail = poppedNode.prev;
-          this.tail.next = null;
-          poppedNode.prev = null; 
+          this.tail = poppedNode.prev
+          this.tail.next = null
+          poppedNode.prev = null 
         }
-        this.length--;
-        return poppedNode.val;
+        this.length--
+        return poppedNode.val
     }
+    // delete from the beginning
+    shift() {
+    if (this.length === 0) {
+      return undefined
+    }
+    
+    const oldHead = this.head
+    if (this.length === 1) {
+      this.head = null
+      this.tail = null
+    } else {
+      this.head = oldHead.next
+      this.head.prev = null
+      oldHead.next = null 
+    }
+    this.length--
+    return oldHead
+  }
 }
