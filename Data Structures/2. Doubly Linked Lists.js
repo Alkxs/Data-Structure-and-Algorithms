@@ -4,7 +4,9 @@ Similar to singly linked list, but every node has another pointer to the previou
 
 Comparisons with Singly Linked Lists:
 
+* Almost the same, but with an additional pointer to previous nodes
 * doubly take up more memory, but are more flexible
+* better for finding nodes and can be done in half time
 
 // Implementation
 
@@ -154,3 +156,9 @@ class DoublyLinkedList {
     return removedNode
   }
 }
+
+// Big O
+* Insertion = O(1)
+* Removal = O(1)
+* Searching = O(n)
+* Access = O(n) 
