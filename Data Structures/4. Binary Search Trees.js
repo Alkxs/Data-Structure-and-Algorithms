@@ -41,7 +41,7 @@ class BinaryTree {
         let newNode = new TreeNode(value);
         if (this.root === null) {
             this.root = newNode;
-        } else {
+        } else { 
             let currentNode = this.root;
             while(true) {
                 if (value < currentNode.value) {
@@ -59,6 +59,22 @@ class BinaryTree {
                 }
             }
         }
+    }
+    find(value) {
+        if (this.root === null) {
+            return false;
+        }
+        let currentNode = this.root;
+        while(currentNode) {
+            if (value < currentNode.value) {
+                currentNode = currentNode.left;
+            } else if (value > currentNode.value) {
+                currentNode = currentNode.right;
+            } else {
+                return currentNode;
+            }
+        }
+        return false;
     }
 } 
 
