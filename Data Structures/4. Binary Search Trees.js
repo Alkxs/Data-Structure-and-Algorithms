@@ -26,63 +26,64 @@ Difference between trees in nature and trees in cs is that a tree in cs has root
 
 class TreeNode {
     constructor(value) {
-        this.value = value;
-        this.left = null;
-        this.right = null;
+        this.value = value
+        this.left = null
+        this.right = null
     }
 }
 
 class BinaryTree {
     constructor() {
-        this.root = null;
+        this.root = null
     }
 
     insert(value) {
-        let newNode = new TreeNode(value);
+        let newNode = new TreeNode(value)
         if (this.root === null) {
-            this.root = newNode;
+            this.root = newNode
         } else { 
-            let currentNode = this.root;
+            let currentNode = this.root
             while(true) {
                 if (value < currentNode.value) {
                     if (!currentNode.left) {
-                        currentNode.left = newNode;
-                        return this;
+                        currentNode.left = newNode
+                        return this
                     }
-                    currentNode = currentNode.left;
+                    currentNode = currentNode.left
                 } else {
                     if (!currentNode.right) {
-                        currentNode.right = newNode;
-                        return this;
+                        currentNode.right = newNode
+                        return this
                     }
-                    currentNode = currentNode.right;
+                    currentNode = currentNode.right
                 }
             }
         }
     }
     find(value) {
         if (this.root === null) {
-            return false;
+            return false
         }
-        let currentNode = this.root;
+        let currentNode = this.root
         while(currentNode) {
             if (value < currentNode.value) {
-                currentNode = currentNode.left;
+                currentNode = currentNode.left
             } else if (value > currentNode.value) {
-                currentNode = currentNode.right;
+                currentNode = currentNode.right
             } else {
-                return currentNode;
+                return currentNode
             }
         }
-        return false;
+        return false
     }
-} 
+}  
 
 // Usage:
-let myTree = new BinaryTree();
-myTree.insert(10);
-myTree.insert(6);
-myTree.insert(15);
-myTree.insert(3);
-myTree.insert(8);
-myTree.insert(20);
+let myTree = new BinaryTree()
+myTree.insert(10)
+myTree.search(10)
+
+// Big O BST
+
+* Insertion = O(log n) // not garanteed
+* Searching = O(log n) // not garanteed
