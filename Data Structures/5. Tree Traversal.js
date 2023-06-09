@@ -2,7 +2,26 @@
 
 Process of visiting each node in a tree data structure oncuechange. different ways:
 
-// Base implementation of binary tree
+1. Depth-first search(DFS)
+
+  * Pre-order:
+    - Visit the node
+    - Traverse the left subtree
+    - Traverse the right subtree
+  * In-order:
+    - Traverse the left subtree
+    - Visit the node
+    - Traverse the right subtree
+  * Post-order:
+    - Traverse the left subtree
+    - Traverse the right subtree
+    - Visit the node
+
+2. Breatdh-first search (BFS)
+
+Unlike depth-first search that dives deep into a tree as much as possible, breadth-first search explores all the neighbors(horizontal search) at the present depth before moving on to nodes at the next depth level. BFS is implemented using a queue.
+
+// Implementation
 
 class Node {
     constructor(value) {
@@ -16,18 +35,8 @@ class BinaryTree {
     constructor() {
         this.root = null;
     }
-    // following methods go here
-}
 
-1. Depth-first search(DFS)
-
-  * Pre-order:
-    - Visit the node
-    - Traverse the left subtree
-    - Traverse the right subtree
-
-    // Implementation
-  preOrder() {
+    preOrder() {
         let result = [];
         function traverse(currentNode) {
             if (currentNode) {
@@ -38,34 +47,21 @@ class BinaryTree {
         }
         traverse(this.root);
         return result;
-}
-
-
-  * In-order:
-    - Traverse the left subtree
-    - Visit the node
-    - Traverse the right subtree
-
-    // Implementation
-   
-
-  * Post-order:
-    - Traverse the left subtree
-    - Traverse the right subtree
-    - Visit the node
-
-    // Implementation
-
-   
-
-
-2. Breatdh-first search (BFS)
-
-Unlike depth-first search that dives deep into a tree as much as possible, breadth-first search explores all the neighbors(horizontal search) at the present depth before moving on to nodes at the next depth level. BFS is implemented using a queue.
-
-  // Implementation
-
- breadthFirst() {
+    }
+    inOrder(){
+        let result = [];
+        function traverse(currentNode) {
+            if (currentNode) {
+                traverse(currentNode.left);
+                result.push(currentNode.value);
+                traverse(currentNode.right);
+            }
+        }
+        traverse(this.root);
+        return result;
+    }
+    }
+    breadthFirst() {
         let result = [];
         let queue = [];
         
@@ -86,7 +82,7 @@ Unlike depth-first search that dives deep into a tree as much as possible, bread
         }
         return result;
     }
-
+}
 
 //Big O tree traversal
 
