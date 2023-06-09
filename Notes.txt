@@ -30,11 +30,11 @@ Sort:
 
 
 Data Structures:
--linked lists (push,pop,shift,unshift,get,set)
--Doubly linked list
--Stacks
--Queues
--Binary Search Trees
+- Linked lists (push,pop,shift,unshift,get,set)
+- Doubly linked list
+- Stacks
+- Queues
+- Binary Search Trees
 - Tree Traversal
 - Binary trees
 - Hash tables
