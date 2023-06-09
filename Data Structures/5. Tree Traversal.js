@@ -27,7 +27,18 @@ class BinaryTree {
     - Traverse the right subtree
 
     // Implementation
- 
+  preOrder() {
+        let result = [];
+        function traverse(currentNode) {
+            if (currentNode) {
+                result.push(currentNode.value);
+                traverse(currentNode.left);
+                traverse(currentNode.right);
+            }
+        }
+        traverse(this.root);
+        return result;
+}
 
 
   * In-order:
