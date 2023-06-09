@@ -60,6 +60,17 @@ class BinaryTree {
         traverse(this.root);
         return result;
     }
+    postOrder() {
+        let result = [];
+        function traverse(currentNode) {
+            if (currentNode) {
+                traverse(currentNode.left);
+                traverse(currentNode.right);
+                result.push(currentNode.value);
+            }
+        }
+        traverse(this.root);
+        return result;
     }
     breadthFirst() {
         let result = [];
@@ -93,4 +104,13 @@ BFS = O(n)
 
 * BFS uses more memory than DFS because it needs to store all nodes in the current level to queue
 
-* BFS could be a good choice if you want to find the shortest path from the root to a target node. But if the tree is very deep and solutions are rare, depth-first search (DFS) might be a better choice.
+// Usage
+
+* BFS for shortest path root to node; if tree very deep DFS.
+
+// Summary
+DFS
+pre = node + left + right
+in = left + node + right
+post = left + right + node
+BFS = horizontal top-down

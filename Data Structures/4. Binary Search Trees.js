@@ -18,7 +18,7 @@ Difference between trees in nature and trees in cs is that a tree in cs has root
 // Type of trees
 * Tree
     * Binary tree => at most 2 children
-      * Binary search tree => special type of binary tree with =>
+       * Binary search tree => special type of binary tree with =>
         - every left node is always less than parent
         - every right node is always greater than parent
 
