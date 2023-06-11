@@ -34,9 +34,9 @@ Data Structures:
 - Doubly linked list
 - Stacks
 - Queues
-- Binary Search Trees
+- Trees,Binary Trees and Binary Search Trees
 - Tree Traversal
-- Binary trees
+- Heaps
 - Hash tables
 - Graphs
 - Graph traversal
