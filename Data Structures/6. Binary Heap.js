@@ -84,6 +84,8 @@ A specialized tree-based data structure similar to binary search tree, each node
       }
   }
 
+// Usage 
+* to build a priority queue
 
 // BigO heaps
 
