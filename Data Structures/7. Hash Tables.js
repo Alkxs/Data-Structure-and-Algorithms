@@ -48,3 +48,9 @@ class HashTable {
         return undefined;
     }
 }
+
+//Big O Notation
+
+* Insert = O(1)
+* Delete = O(1)
+* Retrieve =O(1)
