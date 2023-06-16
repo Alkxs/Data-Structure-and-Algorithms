@@ -10,6 +10,11 @@ The way it works is by using a hash function to compute an index into an array i
 * Delete 
 * Retrieve
 
+// Usage 
+* To find values quickly given a key
+* To add new key / values quickly
+
+
 // Implementation
 
 class HashTable {
