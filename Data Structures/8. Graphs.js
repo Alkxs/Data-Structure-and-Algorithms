@@ -32,7 +32,13 @@ All nodes are treated equally, there is no parent and no priority
 
 * Adjacency matrix : 2D array of size V x V (vertex), if edge the value is 1, otherwise is 0
 
-// Implementation
+// Famous graph algorithms 
+
+* Dijkstra's algorithm (for finding the shortest path from one node to another in a weighted graph)
+* Prim's
+* Kruskal's algorithms (for finding minimum spanning trees in a graph)
+* Bellman-Ford algorithm (for shortest path that handles negative weights)
+* Floyd-Warshall algorithm (for finding shortest paths between all pairs of nodes)
 
 // Big O
 
