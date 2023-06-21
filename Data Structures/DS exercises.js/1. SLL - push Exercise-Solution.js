@@ -26,7 +26,7 @@
 // singlyLinkedList.head.next.next.val; // 15
 // singlyLinkedList.tail.val; // 15
 
-// Implementation
+// Implementation with classes
 
 class Node {
   constructor(val) {
@@ -62,3 +62,47 @@ singlyLinkedList.push(5)
 console.log(singlyLinkedList.length)
 console.log(singlyLinkedList.head.val)
 console.log(singlyLinkedList.tail.val)
+
+// Functional implementation
+
+function Node(val, next = null) {
+  return { val, next }
+}
+
+function LinkedList() {
+  let head = null
+  let tail = null
+  let length = 0
+
+  function getLength() {
+    return length
+  }
+
+  function push(val) {
+    const newNode = Node(val)
+    if (head === null) {
+      head = newNode
+      tail = newNode
+    } else {
+      tail.next = newNode
+      tail = newNode
+    }
+    length += 1
+  }
+
+  function printList() {
+    let current = head
+    while (current) {
+      console.log(current.val)
+      current = current.next
+    }
+  }
+
+  return { push, getLength, printList }
+}
+
+let list = LinkedList()
+list.push(5)
+list.push(10)
+console.log(list.getLength()) // Prints 2
+list.printList() // Prints 5, then 10

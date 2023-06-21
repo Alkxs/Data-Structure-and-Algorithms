@@ -4,10 +4,17 @@ Data Structures
 - Singly Linked lists
 - Doubly Linked lists
 - Binary Search Trees
+- Stacks
 - Queues
-- Undirected Unweighted Graphs
+- Binary Search Trees
+- Tree Traversal
 - Binary Heaps
-- Directed Graphs
 - Hash Tables
-- Stacks 
+- Graphs
+- Graph Traversal
+(Dijkstra Algo)
+
+Exercises
+1. SLL - push
+ 
 
