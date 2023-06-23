@@ -6,28 +6,16 @@ E.g reverseString('algorithms') // should return 'smhtirogla'
 //Solutions
 
 // chaining built-in methods
-function reverseString(text) {
-   
-}
+function reverseString(text) {}
 // built in methods ES 6
-function reverseString(text) {
-   
-}
+function reverseString(text) {}
 // for loop way
-function reverseString(text) {
-    
-}
+function reverseString(text) {}
 // for of loop / ES 6 syntax
-function reverseString(text) {
-}
+function reverseString(text) {}
 // Recursion
-function reverseString(text) {
-}
+function reverseString(text) {}
 // Reduce
-function reverseString(text) {
-
-}
-
-
+function reverseString(text) {}
 
 module.exports = reverseString
