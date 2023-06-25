@@ -3,13 +3,8 @@ Given a string of text, return true or false indicating whether or not the text 
 e.g palindromeChecker('racecar') // will return true
 */
 
-
-
-
 function palindromeChecker(text) {
-    v// Code goes here
+  // Code goes here
 }
 
-
-
-module.exports = palindromeChecker;
+module.exports = palindromeChecker
