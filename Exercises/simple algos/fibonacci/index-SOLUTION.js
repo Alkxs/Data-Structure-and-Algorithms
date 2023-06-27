@@ -1,45 +1,53 @@
 // AN ITERATIVE APPROACH
+function fibonacci(n) {
+  let fibSequence = [0, 1]
+
+  for (let i = 2; i <= n; i++) {
+    fibSequence[i] = fibSequence[i - 1] + fibSequence[i - 2]
+  }
+
+  return fibSequence[n]
+}
+// Alternative iterative approach (a bit more perfomant)
 
 function fibonacci(n) {
-    let previous = 1,
-        current = 1
+  if (n < 2) {
+    return n
+  }
 
-    if (n <= 1) {
-        return 1
-    } else {
-        let counter = n - 1
+  let twoBack = 0
+  let oneBack = 1
+  let current
 
-        while (counter) {
-            let temp = current
-            current += previous
-            previous = temp
-            counter --
-        }
-    }
-    return current
+  for (let i = 2; i <= n; i++) {
+    current = twoBack + oneBack
+    twoBack = oneBack
+    oneBack = current
+  }
+
+  return current
 }
-
 
 // A RECURSIVE SOLUTION
 
 function fibonacci(n) {
-    if (n <= 1) {
-        return 1
-    }
-    return fibonacci(n - 1) + fibonacci(n - 2)
+  if (n <= 1) {
+    return 1
+  }
+  return fibonacci(n - 1) + fibonacci(n - 2)
 }
 
 // USING MEMOIZATION
 
-function fibonacci(n,memo) {
-    memo = memo || {}
+function fibonacci(n, memo) {
+  memo = memo || {}
 
-    if (memo[n]) {
-        return memo[n]
-    }
-    if (n <= 1) {
-        return 1
-    }
+  if (memo[n]) {
+    return memo[n]
+  }
+  if (n <= 1) {
+    return 1
+  }
 
-    return memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+  return (memo[n] = fibonacci(n - 1, memo) + fibonacci(n - 2, memo))
 }
